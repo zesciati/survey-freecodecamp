@@ -59,12 +59,10 @@ body::before{
   /* border:; */
   border-radius: 4px;
   padding: 40px;
-  width: 50%; 
+  width: 60%; 
   background:rgba(42, 42, 72, 0.7) 
 }
-label{
-  display: block;
-}
+
 /* .layout-name{
   display: flex;
   width: 100%;
@@ -84,7 +82,7 @@ label{
 }
 .improved-kontainer{
   /* background-color: wheat; */
-  height: 40vh;
+  min-height: 30vh;
 }
 .improved{
   /* display: block; */
@@ -95,26 +93,29 @@ label{
   height: 7rem;
   padding-top: 12px;
 }
-.label-definitely, .label-maybe, .label-notsure{
+/* .label-definitely, .label-maybe, .label-notsure{
   display: inline;
 }
 .label-frontend, .label-backend, .label-datavisualization, .label-challenges, .label-opensource, .label-gitter, .label-video, .label-city, .label-wiki, .label-forum, .label-additionalcourse{
   display: inline;
-}
+} */
 
 .any-kontainer{
   /* background-color: wheat; */
   height: 20vh;
 }
 .comment-suggestion{
-  /* min-height: 120px;
-  width: 100%;
-  padding: 0.625rem;
-  resize: vertical;
-  height: 20px; */
+width: 100%;
+resize: vertical;
+font-size: large;
+min-height: 120px;
 }
 
 .submitted{
   background-color: aquamarine;
   color: var(--color-white);
+}
+
+.name-kontainer, .email-kontainer, .age-kontainer, .role-kontainer, .recommend-kontainer, .feature-kontainer, .improved-kontainer, .any-kontainer, .button-kontainer{
+  margin: 1rem 0;
 }
