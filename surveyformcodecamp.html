@@ -1,95 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="surveyformcodecamp.css">
-  <title>Document</title>
-</head>
-<body>
-  <!-- REFERENSI -->
-  <!-- <a href="https://survey-form.freecodecamp.rocks/"></a> -->
-   <header class="judul">
-    <h2>freeCodeCamp Survey Form</h2>
-    <h3 class="short-gratitude"><em>Thank you for taking the time to help us improve the platform</em></h3>
-   </header>
-      
-   <section class="konten-form">
-    <div class="konten-form2">
-    <form action="" class="form-register">
-    <div class="name-kontainer">
-      <label for="name">Name</label> 
-      <div class="layout-name">
-      <input type="text" name="Name" id="Name" placeholder="Enter your name" class="nama">
-    </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="surveyformcodecamp.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- REFERENSI -->
+    <!-- <a href="https://survey-form.freecodecamp.rocks/"></a> -->
+    <header class="judul">
+      <h2>freeCodeCamp Survey Form</h2>
+      <h3 class="short-gratitude">
+        <em>Thank you for taking the time to help us improve the platform</em>
+      </h3>
+    </header>
 
-    <div class="email-kontainer">
-      <label for="email">Email</label>
-      <input type="email" name="Email" id="email" placeholder="Enter your email" class="email">
-    </div>
+    <section class="konten-form">
+      <div class="konten-form2">
+        <form action="" class="form-register">
+          <div class="name-kontainer">
+            <label for="name">Name</label>
+            <div class="layout-name">
+              <input
+                type="text"
+                name="name"
+                id="Name"
+                placeholder="Enter your name"
+                class="nama"
+              />
+            </div>
+          </div>
 
-    <div class="age-kontainer">      
-      <label for="age">Age (optional)</label>
-      <input type="number" name="Age" id="age" min="1" max="40" placeholder="Age" class="age">
-    </div>
+          <div class="email-kontainer">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              class="email"
+            />
+          </div>
 
-    <div class="role-kontainer">
-      <label for="">Which option best describes your current role?</label>
-      <select name="" id="" >
-        <option value="" disabled selected >Select current role</option>
-        <option value="">Student</option>
-        <option value="">Full Time Job</option>
-        <option value="">Full Time Learner</option>
-        <option value="">Prefer Not To Say</option>
-        <option value="">Other</option>
-      </select>
-    </div>
+          <div class="age-kontainer">
+            <label for="age">Age (optional)</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              min="1"
+              max="40"
+              placeholder="Age"
+              class="age"
+            />
+          </div>
 
-    <div class="recommend-kontainer">
-      <label for="">Would you recommend freeCodeCamp to a friend?</label>
-      <input type="radio" name="" id="">Definitely
-      <input type="radio" name="" id="">Maybe
-      <input type="radio" name="" id="">Not Sure
-    </div>
+          <div class="role-kontainer">
+            <label for="">Which option best describes your current role?</label>
+            <select name="" id="" class="role">
+              <option value="" disabled selected>Select current role</option>
+              <option value="">Student</option>
+              <option value="">Full Time Job</option>
+              <option value="">Full Time Learner</option>
+              <option value="">Prefer Not To Say</option>
+              <option value="">Other</option>
+            </select>
+          </div>
 
-    <div class="feature-kontainer">
-      <label for="">What is your favorite feature of freeCodeCamp?</label>
-      <select name="" id="" >
-        <option value="" disabled selected >Select an option</option>
-        <option value="">Challenges</option>
-        <option value="">Projects</option>
-        <option value="">Community</option>
-        <option value="">Open Source</option>
-      </select>
-    </div>
+          <div class="recommend-kontainer">
+            <label for="">Would you recommend freeCodeCamp to a friend?</label>
 
-    <div class="improved-kontainer">
-      <label for="">What would you like to see improved? (Check all that apply)</label>
-      <input type="checkbox" name="" id="">Front-end Projects
-      <input type="checkbox" name="" id="">Back-end Projects
-      <input type="checkbox" name="" id="">Data Visualization
-      <input type="checkbox" name="" id="">Challenges
-      <input type="checkbox" name="" id="">Open Source Community
-      <input type="checkbox" name="" id="">Gitter help rooms
-      <input type="checkbox" name="" id="">Videos
-      <input type="checkbox" name="" id="">City Meetups
-      <input type="checkbox" name="" id="">Wiki
-      <input type="checkbox" name="" id="">Forum
-      <input type="checkbox" name="" id="">Additional Courses
-    </div>
+            <input
+              type="radio"
+              name="recommend-to-a-friend"
+              id="definitely"
+              class="recommend-option"
+            /><label for="definitely" class="label-definitely"
+              >Definitely</label
+            >
+            <div>
+              <input
+                type="radio"
+                name="recommend-to-a-friend"
+                id="maybe"
+                class="recommend-option1"
+              /><label for="maybe" class="label-maybe">Maybe</label>
+            </div>
+            <input
+              type="radio"
+              name="recommend-to-a-friend"
+              id="notsure"
+              class="recommend-option2"
+            /><label for="notsure" class="label-notsure">Not Sure</label>
+          </div>
 
-    <div class="any-kontainer">
-      <label for="">Any comments or suggestions?</label>
-      <textarea name="" id="" placeholder="Enter your comment here"></textarea>
-    </div>
-    <div class="button-kontainer">
-      <button type="submit">
-        Submit
-      </button>
-    </div>
-    </form>
-  </div>
-   </section>
-</body>
+          <div class="feature-kontainer">
+            <label for="">What is your favorite feature of freeCodeCamp?</label>
+            <select name="" id="" class="feature">
+              <option value="" disabled selected>Select an option</option>
+              <option value="">Challenges</option>
+              <option value="">Projects</option>
+              <option value="">Community</option>
+              <option value="">Open Source</option>
+            </select>
+          </div>
+
+          <div class="improved-kontainer">
+            <label for=""
+              >What would you like to see improved? (Check all that
+              apply)</label
+            >
+            <!-- <div class="improved"> -->
+            <div>
+              <input
+                type="checkbox"
+                name="Front-end Projects"
+                id="frontend"
+                class="checkbox-frontend"
+              /><label for="frontend" class="label-frontend"
+                >Front-end Projects</label
+              >
+            </div>
+            <div>
+            <input
+              type="checkbox"
+              name=""
+              id="backend"
+              class="checkbox-backend"
+            /><label for="backend" class="label-backend">Back-end Projects</label> 
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="datavisual"
+              class="label-datavisualization"
+            /><label for="datavisual" class="label-datavisualization">Data Visualization</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="challenge"
+              class="checkbox-challenge"
+            /><label for="challenge" class="label-challenges">Challenges</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="opensource"
+              class="checkbox-opensource"
+            /><label for="opensource" class="label-opensource">Open Source Community</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="gitter"
+              class="checkbox-gitter"
+            /><label for="gitter" class="label-gitter">Gitter help rooms</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="video"
+              class="checkbox-videos"
+            /><label for="video" class="label-video">Videos</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="citymeet"
+              class="checkbox-citymeetups"
+            /><label for="citymeet" class="label-city">City Meetups</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="wiki"
+              class="checkbox-wiki"
+            /><label for="wiki" class="label-wiki">Wiki</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="forum"
+              class="checkbox-forum"
+            /><label for="forum" class="label-forum">Forum</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name=""
+              id="additionalcourse"
+              class="checkbox-additional"
+            /><label for="additionalcourse" class="label-additionalcourse">Additional Courses</label>
+          </div>
+            <!-- </div> -->
+          </div>
+
+          <div class="any-kontainer">
+            <label for="">Any comments or suggestions?</label>
+            <textarea
+              name=""
+              id=""
+              placeholder="Enter your comment here"
+              class="comment-suggestion"
+              cols="90"
+              rows="8"
+            ></textarea>
+          </div>
+
+          <div class="button-kontainer">
+            <button type="submit" class="button-submit submitted">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

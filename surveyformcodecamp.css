@@ -52,7 +52,7 @@ body::before{
 .konten-form2{
   display: flex;
   justify-content: center;
-  min-height: 50rem ;
+  min-height: 60rem ;
   /* width: 80%; */
 }
 .form-register{
@@ -73,11 +73,48 @@ label{
   border-radius: 4px;
 } */
 
-.nama,.email, .age{
+.nama,.email, .age, .role, .feature, .button-submit{
   width: 100%;
   height: 2rem;
   font-size:medium;
   /* margin-left: 12px; */
   padding-left: 12px;
   border-radius: 5px;
+  /* margin-top: 12px; */
+}
+.improved-kontainer{
+  /* background-color: wheat; */
+  height: 40vh;
+}
+.improved{
+  /* display: block; */
+}
+
+.recommend-kontainer{
+  /* background-color: wheat; */
+  height: 7rem;
+  padding-top: 12px;
+}
+.label-definitely, .label-maybe, .label-notsure{
+  display: inline;
+}
+.label-frontend, .label-backend, .label-datavisualization, .label-challenges, .label-opensource, .label-gitter, .label-video, .label-city, .label-wiki, .label-forum, .label-additionalcourse{
+  display: inline;
+}
+
+.any-kontainer{
+  /* background-color: wheat; */
+  height: 20vh;
+}
+.comment-suggestion{
+  /* min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  height: 20px; */
+}
+
+.submitted{
+  background-color: aquamarine;
+  color: var(--color-white);
 }
